@@ -11,15 +11,20 @@ Este guia é bem simples e não tendo a pretenção de ser obrigatório, é apen
 ## Formatação e Estilo no HTML
 
 1. [DOCTYPE](#doctype)
-1. [Capitalização](#capslock)
-1. [Lang](#lang)
-1. [UTF-8 encoding](#encoding)
-1. [Indentação de Hierarquia](#indentation)
-1. [Espaços Vazios](#whitespaces)
-1. [Organizando os Atributos no HTML](#attributes)
-1. [Aspas Duplas em Atribuições](#doublequotes)
-1. [Tags de Auto-Fechamento](#void-elements)
-1. [Viewport em Ação](#viewport)
-1. [Protocolo https://](#https)
-1. [Estrutura de diretórios](#directory-structure)
 ___
+
+O uso de uma formatação concisa torna mais fácil a leitura do seu HTML e possibilita que qualquer outro desenvolvedor se concentre no que você está dizendo e não em como você está dizendo.
+
+
+<a name="doctype"></a>
+#### 1°```<!DOCTYPE html>``` como estrutura global
+
+```!DOCTYPE``` é uma instrução para os browsers sobre a versão do html,
+portanto essa declaração deve ser a primeira informação em seu html.
+
+```html
+<!doctype html>
+<html>
+  ...
+</html>
+```
