@@ -11,20 +11,41 @@ Este guia é bem simples e não tendo a pretenção de ser obrigatório, é apen
 ## Formatação e Estilo no HTML
 
 1. [DOCTYPE](#doctype)
+1. [Capitalização](#capslock)
 ___
 
 O uso de uma formatação concisa torna mais fácil a leitura do seu HTML e possibilita que qualquer outro desenvolvedor se concentre no que você está dizendo e não em como você está dizendo.
-
 
 <a name="doctype"></a>
 #### 1°```<!DOCTYPE html>``` como estrutura global
 
 ```!DOCTYPE``` é uma instrução para os browsers sobre a versão do html,
 portanto essa declaração deve ser a primeira informação em seu html.
-
+	
 ```html
 <!doctype html>
 <html>
   ...
 </html>
+```
+<a name="capslock"></a>
+#### 2°	Capitalização - CAIXA ALTA e/ou caixa baixa?
+
+Embora o HTML5 permite misturar letras MAIÚSCULAS e minúsculas, use somente "lowercase"
+
+- :heavy_check_mark: *Código mais Limpo*
+- :heavy_check_mark: *Facil Digitar*
+- :heavy_check_mark: *Sem Distrações na Leitura*
+
+```html
+<!-- recomendado -->
+<article class="article">
+ <p>...</p>
+</article>
+```
+```html
+<!-- não recomendado -->
+<ARTICLE Class="article">
+  <p>...</p>
+</article>
 ```
