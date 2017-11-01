@@ -12,6 +12,7 @@ Este guia é bem simples e não tendo a pretenção de ser obrigatório, é apen
 
 1. [DOCTYPE](#doctype)
 1. [Capitalização](#capslock)
+1. [Lang](#lang)
 ___
 
 O uso de uma formatação concisa torna mais fácil a leitura do seu HTML e possibilita que qualquer outro desenvolvedor se concentre no que você está dizendo e não em como você está dizendo.
@@ -21,7 +22,7 @@ O uso de uma formatação concisa torna mais fácil a leitura do seu HTML e poss
 
 ```!DOCTYPE``` é uma instrução para os browsers sobre a versão do html,
 portanto essa declaração deve ser a primeira informação em seu html.
-	
+
 ```html
 <!doctype html>
 <html>
@@ -33,9 +34,9 @@ portanto essa declaração deve ser a primeira informação em seu html.
 
 Embora o HTML5 permite misturar letras MAIÚSCULAS e minúsculas, use somente "lowercase"
 
-- :heavy_check_mark: *Código mais Limpo*
-- :heavy_check_mark: *Facil Digitar*
-- :heavy_check_mark: *Sem Distrações na Leitura*
+- [x] *Código mais limpo*
+- [x] *Facil digitar*
+- [x] *Sem distrações na leitura*
 
 ```html
 <!-- recomendado -->
@@ -48,4 +49,24 @@ Embora o HTML5 permite misturar letras MAIÚSCULAS e minúsculas, use somente "l
 <ARTICLE Class="article">
   <p>...</p>
 </article>
+```
+<a name="lang"></a>
+#### 3°	Use ```lang=" "``` para Especificar o Idioma:
+
+Ao atribuir o idioma padrão do documento, você auxilia softwares de voz determinar quais pronuncias usar e a softwares de tradução quais regras utilizar.
+
+```html
+<!-- recomendado -->
+<html lang="pt-br">
+<head>
+  ...
+</head>
+```
+```html
+<!-- não recomendado -->
+<html>
+<head>
+  ...
+</head>
+
 ```
