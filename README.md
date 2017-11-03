@@ -13,6 +13,7 @@ Este guia é bem simples e não tendo a pretenção de ser obrigatório, é apen
 1. [DOCTYPE](#doctype)
 1. [Capitalização](#capslock)
 1. [Lang](#lang)
+1. [UTF-8 encoding](#encoding)
 ___
 
 O uso de uma formatação concisa torna mais fácil a leitura do seu HTML e possibilita que qualquer outro desenvolvedor se concentre no que você está dizendo e não em como você está dizendo.
@@ -68,5 +69,24 @@ Ao atribuir o idioma padrão do documento, você auxilia softwares de voz determ
 <head>
   ...
 </head>
+```
+<a name="encoding"></a>
 
+#### 4° ```UTF-8``` Codificação de Caracteres:
+
+Você deve garantir a renderização adequada do seu html e ao especificar a codificação utilizada, você evita que os caracteres do seu conteúdo sejam interpretados incorretamente. Com isso você garante legibilidade para humanos e maquinas, pois cadas vez mais softwares necessitam processar seus dados.
+
+```html
+<!-- recomendado -->
+<head>
+  <meta charset="utf-8">
+   ...
+</head>
+```
+```html
+<!-- não recomendado -->
+<head>
+  <meta>
+   ...
+</head>
 ```
