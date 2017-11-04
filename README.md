@@ -15,6 +15,7 @@ Este guia é bem simples e não tendo a pretenção de ser obrigatório, é apen
 1. [Lang](#lang)
 1. [UTF-8 encoding](#encoding)
 1. [Indentação e Hierarquia](#indentation)
+1. [Espaços Vazios](#whitespaces)
 ___
 
 O uso de uma formatação concisa torna mais fácil a leitura do seu HTML e possibilita que qualquer outro desenvolvedor se concentre no que você está dizendo e não em como você está dizendo.
@@ -111,3 +112,17 @@ Use soft-tabs com dois espaços.
                   <a class="nav-link">
 ```
 _Para padronizar isso em qualquer editor/IDE, use o [editorconfig](http://editorconfig.org/)_
+
+<a name="whitespaces"></a>
+#### 6° Espaços Vazios:
+
+Para manter seu código limpo e não sujar diffs no git, Remova todos os espaços desnecessários, principalmente os da direita.
+
+```html
+<!-- recomendado -->
+<p>Lorem ipsum dolor sit amet, ...</p>
+```
+```html
+<!-- não recomendado -->
+<p>_ Lorem ipsum dolor sit amet, ...</p>_
+```
