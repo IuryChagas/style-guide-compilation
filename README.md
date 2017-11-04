@@ -14,6 +14,7 @@ Este guia é bem simples e não tendo a pretenção de ser obrigatório, é apen
 1. [Capitalização](#capslock)
 1. [Lang](#lang)
 1. [UTF-8 encoding](#encoding)
+1. [Indentação e Hierarquia](#indentation)
 ___
 
 O uso de uma formatação concisa torna mais fácil a leitura do seu HTML e possibilita que qualquer outro desenvolvedor se concentre no que você está dizendo e não em como você está dizendo.
@@ -90,3 +91,23 @@ Você deve garantir a renderização adequada do seu html e ao especificar a cod
    ...
 </head>
 ```
+<a name="indentation"></a>
+#### 5° Indentação de hierarquia:
+
+Use soft-tabs com dois espaços.
+
+```html
+<!-- recomendado -->
+<nav class="navbar">
+  <ul class="nav">
+    <li class="nav-item">
+      <a class="nav-link">
+```
+```html
+<!-- não recomendado -->
+<nav class="navbar">
+      <ul class="nav">
+            <li class="nav-item">
+                  <a class="nav-link">
+```
+_Para padronizar isso em qualquer editor/IDE, use o [editorconfig](http://editorconfig.org/)_
