@@ -126,3 +126,20 @@ Para manter seu código limpo e não sujar diffs no git, Remova todos os espaço
 <!-- não recomendado -->
 <p>_ Lorem ipsum dolor sit amet, ...</p>_
 ```
+<a name="attributes"></a>
+#### 7° Organizando os Atributos no html:
+
+Não há uma regra absoluta, apenas uma hierarquia para facilitar a leitura e manutenção.
+
+1. `class`
+1. `id`, `name`
+1. `data-*`
+1. `src`, `for`, `type`, `href`
+1. `title`, `alt`
+1. `aria-*`, `role`
+
+```html
+  <!-- Precisamos de exemplos... e essa é a hora de você contribuir! -->
+  <!-- Seguindo a organização descrita acima, Crie um código ficticio ou -->
+  <!-- /compartilhe um já existente que contenha a maioria destes atributos -->
+```
