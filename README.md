@@ -16,6 +16,8 @@ Este guia é bem simples e não tendo a pretenção de ser obrigatório, é apen
 1. [UTF-8 encoding](#encoding)
 1. [Indentação e Hierarquia](#indentation)
 1. [Espaços Vazios](#whitespaces)
+1. [Organizando os Atributos no HTML](#attributes)
+1. [Aspas Duplas em Atribuições](#doublequotes)
 ___
 
 O uso de uma formatação concisa torna mais fácil a leitura do seu HTML e possibilita que qualquer outro desenvolvedor se concentre no que você está dizendo e não em como você está dizendo.
@@ -142,4 +144,21 @@ Não há uma regra absoluta, apenas uma hierarquia para facilitar a leitura e ma
   <!-- Precisamos de exemplos... e essa é a hora de você contribuir! -->
   <!-- Seguindo a organização descrita acima, Crie um código ficticio ou -->
   <!-- /compartilhe um já existente que contenha a maioria destes atributos -->
+```
+<a name="doublequotes"></a>
+#### 8° Aspas Duplas nos Atributos:
+
+Sempre use "double quotes" ao inserir atributos em seu html.
+
+```html
+<!-- recomendado -->
+<article class="article">
+  <h1 class="main-title">...</h1>
+</article>
+```
+```html
+<!-- não recomendado -->
+<article class='article'>
+  <h1 class='main-title'>...</h1>
+</article>
 ```
