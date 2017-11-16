@@ -18,6 +18,7 @@ Este guia é bem simples e não tendo a pretenção de ser obrigatório, é apen
 1. [Espaços Vazios](#whitespaces)
 1. [Organizando os Atributos no HTML](#attributes)
 1. [Aspas Duplas em Atribuições](#doublequotes)
+1. [Tags de Auto-Fechamento](#void-elements)
 ___
 
 O uso de uma formatação concisa torna mais fácil a leitura do seu HTML e possibilita que qualquer outro desenvolvedor se concentre no que você está dizendo e não em como você está dizendo.
@@ -161,4 +162,29 @@ Sempre use "double quotes" ao inserir atributos em seu html.
 <article class='article'>
   <h1 class='main-title'>...</h1>
 </article>
+```
+<a name="void-elements"></a>
+#### 9° Tags de Auto-fechamento:
+
+Recomenda-se não utilizar barra de fechamento ```/``` em elementos vazios.
+
+Veja a lista de todas as tags de auto-fechamento.
+
+```html
+ 1. <area>
+ 2. <base>
+ 3. <br>
+ 4. <col>
+ 5. <command>
+ 6. <embed>
+ 7. <hr>
+ 8. <img>
+ 9. <input>
+10. <keygen>
+11. <link>
+12. <meta>
+13. <param>
+14. <source>
+15. <track>
+16. <wbr>
 ```
