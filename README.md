@@ -20,6 +20,7 @@ Este guia é bem simples e não tendo a pretenção de ser obrigatório, é apen
 1. [Aspas Duplas em Atribuições](#doublequotes)
 1. [Tags de Auto-Fechamento](#void-elements)
 1. [Viewport em Ação](#viewport)
+1. [Protocolo https://](#https)
 ___
 
 O uso de uma formatação concisa torna mais fácil a leitura do seu HTML e possibilita que qualquer outro desenvolvedor se concentre no que você está dizendo e não em como você está dizendo.
@@ -213,3 +214,21 @@ Você deve incluir em todas as suas páginas web e certamente os usuários de sm
 </head>
 ```
 - sem `viewport` [exemplo não recomendado](https://www.w3schools.com/css/img_viewport1.png)
+
+<a name="https"></a>
+#### 11° HTTPS protocol
+
+Proporcione aos usuários mais segurança, Use sempre que possível o protocolo `HTTPS` ao inserir links externos.
+
+```html
+  <!-- recomendado -->
+  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+  ...
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js" ></script>
+```
+```html
+  <!-- não recomendado -->
+  <link href="http://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+  ...
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js" ></script>
+```
