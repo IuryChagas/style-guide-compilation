@@ -21,7 +21,7 @@ Este guia é bem simples e não tendo a pretenção de ser obrigatório, é apen
 1. [Tags de Auto-Fechamento](#void-elements)
 1. [Viewport em Ação](#viewport)
 1. [Protocolo HTTPS://](#https)
-1. [Estrutura de diretórios](#directory-structure)
+1. [Estrutura de Diretórios](#directory-structure)
 ___
 
 O uso de uma formatação concisa torna mais fácil a leitura do seu HTML e possibilita que qualquer outro desenvolvedor se concentre no que você está dizendo e não em como você está dizendo.
@@ -260,4 +260,25 @@ Embora a estrutura de diretórios dependa exclusivamente do tipo de projeto, seg
 ├── projetos.html
 ├── sobre.html
 └── contato.html
+```
+Depois de quase tudo explicado nos minimos detalhes, segue um resumo final:
+
+```html
+<!doctype html>
+<html lang="pt-br">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="shortcut icon" href="img/favicon.ico">
+  <link rel="stylesheet" href="css/main.css">
+  <title>...</title>
+</head>
+<body>
+  <main>
+    ...
+  </main>
+  <script src="js/script.js"></script>
+</body>
+
+</html>
 ```
