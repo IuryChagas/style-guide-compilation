@@ -20,7 +20,8 @@ Este guia é bem simples e não tendo a pretenção de ser obrigatório, é apen
 1. [Aspas Duplas em Atribuições](#doublequotes)
 1. [Tags de Auto-Fechamento](#void-elements)
 1. [Viewport em Ação](#viewport)
-1. [Protocolo https://](#https)
+1. [Protocolo HTTPS://](#https)
+1. [Estrutura de diretórios](#directory-structure)
 ___
 
 O uso de uma formatação concisa torna mais fácil a leitura do seu HTML e possibilita que qualquer outro desenvolvedor se concentre no que você está dizendo e não em como você está dizendo.
@@ -231,4 +232,32 @@ Proporcione aos usuários mais segurança, Use sempre que possível o protocolo 
   <link href="http://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
   ...
   <script src="//ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js" ></script>
+```
+<a name="directory-structure"></a>
+#### 12° Estrutura de Diretórios
+
+Embora a estrutura de diretórios dependa exclusivamente do tipo de projeto, segue uma estrutura basica:
+
+- _3 Diretórios:_ |`:css`| |`:img`| |`:js`|
+- _5 Arquivos:_ `.html`
+- _1 Arquivo:_ `.css`
+- _3 Arquivos:_ `imgs`
+- _2 Arquivos:_ `.js`
+
+```html
+.
+├── index.html
+├──:css
+|  └── main.css
+├──:img
+|  ├── favicon.ico
+│  ├── imagen.png
+│  └── imagem.jpg
+├──:js
+│  ├── main.js
+│  └── scripts.js
+├── blog.html
+├── projetos.html
+├── sobre.html
+└── contato.html
 ```
