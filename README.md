@@ -19,6 +19,7 @@ Este guia é bem simples e não tendo a pretenção de ser obrigatório, é apen
 1. [Organizando os Atributos no HTML](#attributes)
 1. [Aspas Duplas em Atribuições](#doublequotes)
 1. [Tags de Auto-Fechamento](#void-elements)
+1. [Viewport em Ação](#viewport)
 ___
 
 O uso de uma formatação concisa torna mais fácil a leitura do seu HTML e possibilita que qualquer outro desenvolvedor se concentre no que você está dizendo e não em como você está dizendo.
@@ -188,3 +189,27 @@ Veja a lista de todas as tags de auto-fechamento.
 15. <track>
 16. <wbr>
 ```
+<a name="viewport"></a>
+#### 10° Configure a área visível ao usuário (viewport)
+
+A função da viewport é definir qual a área visível de uma página web. Essa área varia/se adapta de acordo com dispositivo.
+Você deve incluir em todas as suas páginas web e certamente os usuários de smatphones agradecem:
+
+```html
+<!-- recomendado -->
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  ...
+</head>
+```
+- com `viewport` [exemplo recomendado](https://www.w3schools.com/css/img_viewport2.png)
+
+```html
+<!-- não recomendado -->
+<head>
+  <meta charset="utf-8">
+  ...
+</head>
+```
+- sem `viewport` [exemplo não recomendado](https://www.w3schools.com/css/img_viewport1.png)
