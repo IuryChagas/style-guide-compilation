@@ -8,6 +8,10 @@ Este guia é bem simples e não tendo a pretenção de ser obrigatório, é apen
 
 :octocat: Contribua, suas ideias e sugestões são bem-vindas.
 
+## Tópicos:
+1. **[HTML](#formatacao-e-estilo-no-html)**
+1. **[CSS](#formatacao-e-estilo-no-css)**
+
 ## 1. Formatação e Estilo no HTML
 
 1. [DOCTYPE](#doctype)
@@ -282,3 +286,9 @@ Depois de quase tudo explicado nos minimos detalhes, segue um resumo final:
 </html>
 ```
 **[⬆ voltar ao topo](#guia-basico-de-estilo-html-e-css)**
+
+## 2. Formatação e Estilo no CSS
+___
+
+> O formato de código escolhido deve garantir que o código seja: Fácil de ler, Fácil de comentar, Minimizar as chances de introduizir erros, e Resultar em diffs e blames úteis.
+~ Nicolas Gallagher
