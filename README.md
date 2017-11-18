@@ -1,6 +1,6 @@
 <h3>:clipboard:</h3>
 
-# Guia Básico de Estilo HTML e CSS
+# Guia Basico de Estilo HTML e CSS
 
 Das pesquisas por convensões de padronização e organização de código surgiu a necessidade de documentar as preferências de escrita adotada por renomados e quase anonimos desenvolvedores ao redor da web. 
 
@@ -8,7 +8,7 @@ Este guia é bem simples e não tendo a pretenção de ser obrigatório, é apen
 
 :octocat: Contribua, suas ideias e sugestões são bem-vindas.
 
-## Formatação e Estilo no HTML
+## 1. Formatação e Estilo no HTML
 
 1. [DOCTYPE](#doctype)
 1. [Capitalização](#capslock)
@@ -279,6 +279,6 @@ Depois de quase tudo explicado nos minimos detalhes, segue um resumo final:
   </main>
   <script src="js/script.js"></script>
 </body>
-
 </html>
 ```
+**[⬆ voltar ao topo](#guia-basico-de-estilo-html-e-css)**
