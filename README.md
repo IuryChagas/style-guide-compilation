@@ -33,7 +33,7 @@ ___
 O uso de uma formatação concisa torna mais fácil a leitura do seu HTML e possibilita que qualquer outro desenvolvedor se concentre no que você está dizendo e não em como você está dizendo.
 
 <a name="doctype"></a>
-#### 1°```<!DOCTYPE html>``` como estrutura global
+#### 1.1```<!DOCTYPE html>``` como estrutura global
 
 ```!DOCTYPE``` é uma instrução para os browsers sobre a versão do html,
 portanto essa declaração deve ser a primeira informação em seu html.
@@ -45,7 +45,7 @@ portanto essa declaração deve ser a primeira informação em seu html.
 </html>
 ```
 <a name="capslock"></a>
-#### 2°	Capitalização - CAIXA ALTA e/ou caixa baixa?
+#### 1.2 Capitalização - CAIXA ALTA e/ou caixa baixa?
 
 Embora o HTML5 permite misturar letras MAIÚSCULAS e minúsculas, use somente "lowercase"
 
@@ -66,7 +66,7 @@ Embora o HTML5 permite misturar letras MAIÚSCULAS e minúsculas, use somente "l
 </article>
 ```
 <a name="lang"></a>
-#### 3°	Use ```lang=" "``` para Especificar o Idioma:
+#### 1.3 Use ```lang=" "``` para Especificar o Idioma:
 
 Ao atribuir o idioma padrão do documento, você auxilia softwares de voz determinar quais pronuncias usar e a softwares de tradução quais regras utilizar.
 
@@ -86,7 +86,7 @@ Ao atribuir o idioma padrão do documento, você auxilia softwares de voz determ
 ```
 <a name="encoding"></a>
 
-#### 4° ```UTF-8``` Codificação de Caracteres:
+#### 1.4 ```UTF-8``` Codificação de Caracteres:
 
 Você deve garantir a renderização adequada do seu html e ao especificar a codificação utilizada, você evita que os caracteres do seu conteúdo sejam interpretados incorretamente. Com isso você garante legibilidade para humanos e maquinas, pois cadas vez mais softwares necessitam processar seus dados.
 
@@ -105,7 +105,7 @@ Você deve garantir a renderização adequada do seu html e ao especificar a cod
 </head>
 ```
 <a name="indentation"></a>
-#### 5° Indentação de hierarquia:
+#### 1.5 Indentação de hierarquia:
 
 Use soft-tabs com dois espaços.
 
@@ -126,7 +126,7 @@ Use soft-tabs com dois espaços.
 _Para padronizar isso em qualquer editor/IDE, use o [editorconfig](http://editorconfig.org/)_
 
 <a name="whitespaces"></a>
-#### 6° Espaços Vazios:
+#### 1.6 Espaços Vazios:
 
 Para manter seu código limpo e não sujar diffs no git, Remova todos os espaços desnecessários, principalmente os da direita.
 
@@ -139,7 +139,7 @@ Para manter seu código limpo e não sujar diffs no git, Remova todos os espaço
 <p>_ Lorem ipsum dolor sit amet, ...</p>_
 ```
 <a name="attributes"></a>
-#### 7° Organizando os Atributos no html:
+#### 1.7 Organizando os Atributos no html:
 
 Não há uma regra absoluta, apenas uma hierarquia para facilitar a leitura e manutenção.
 
@@ -156,7 +156,7 @@ Não há uma regra absoluta, apenas uma hierarquia para facilitar a leitura e ma
   <!-- /compartilhe um já existente que contenha a maioria destes atributos -->
 ```
 <a name="doublequotes"></a>
-#### 8° Aspas Duplas nos Atributos:
+#### 1.8 Aspas Duplas nos Atributos:
 
 Sempre use "double quotes" ao inserir atributos em seu html.
 
@@ -173,7 +173,7 @@ Sempre use "double quotes" ao inserir atributos em seu html.
 </article>
 ```
 <a name="void-elements"></a>
-#### 9° Tags de Auto-fechamento:
+#### 1.9 Tags de Auto-fechamento:
 
 Recomenda-se não utilizar barra de fechamento ```/``` em elementos vazios.
 
@@ -198,7 +198,7 @@ Veja a lista de todas as tags de auto-fechamento.
 16. <wbr>
 ```
 <a name="viewport"></a>
-#### 10° Configure a área visível ao usuário (viewport)
+#### 1.10 Configure a área visível ao usuário (viewport)
 
 A função da viewport é definir qual a área visível de uma página web. Essa área varia/se adapta de acordo com dispositivo.
 Você deve incluir em todas as suas páginas web e certamente os usuários de smatphones agradecem:
@@ -223,7 +223,7 @@ Você deve incluir em todas as suas páginas web e certamente os usuários de sm
 - sem `viewport` [exemplo não recomendado](https://www.w3schools.com/css/img_viewport1.png)
 
 <a name="https"></a>
-#### 11° HTTPS protocol
+#### 1.11 HTTPS protocol
 
 Proporcione aos usuários mais segurança, Use sempre que possível o protocolo `HTTPS` ao inserir links externos.
 
@@ -240,7 +240,7 @@ Proporcione aos usuários mais segurança, Use sempre que possível o protocolo 
   <script src="//ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js" ></script>
 ```
 <a name="directory-structure"></a>
-#### 12° Estrutura de Diretórios
+#### 1.12 Estrutura de Diretórios
 
 Embora a estrutura de diretórios dependa exclusivamente do tipo de projeto, segue uma estrutura basica:
 
