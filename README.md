@@ -9,9 +9,11 @@ Este guia é bem simples e não tendo a pretenção de ser obrigatório, é apen
 :octocat: Contribua, suas ideias e sugestões são bem-vindas.
 
 ## Tópicos:
-1. **[HTML](#formatacao-e-estilo-no-html)**
-1. **[CSS](#formatacao-e-estilo-no-css)**
 
+1. **[HTML](#html)**
+1. **[CSS](#css)**
+
+<a name="html"></a>
 ## 1. Formatação e Estilo no HTML
 
 1. [DOCTYPE](#doctype)
@@ -287,6 +289,7 @@ Depois de quase tudo explicado nos minimos detalhes, segue um resumo final:
 ```
 **[⬆ voltar ao topo](#guia-basico-de-estilo-html-e-css)**
 
+<a name="css"></a>
 ## 2. Formatação e Estilo no CSS
 ___
 
