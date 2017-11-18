@@ -293,5 +293,25 @@ Depois de quase tudo explicado nos minimos detalhes, segue um resumo final:
 ## 2. Formatação e Estilo no CSS
 ___
 
+1. [ID e Nomeação de Classes](#classnaming)
+
 > O formato de código escolhido deve garantir que o código seja: Fácil de ler, Fácil de comentar, Minimizar as chances de introduizir erros, e Resultar em diffs e blames úteis.
 ~ Nicolas Gallagher
+
+<a name="classnaming"></a>
+#### 2.1 Nomeação de Classes, IDs
+
+Use nomes legiveis sempre em caixa baixa e que faça referência direta com o propósito/finalidade do elemento.
+
+```css
+  /* recomendado */
+  .class-name-example {
+    ...
+  }
+```
+```css
+  /* não recomendado */
+  .Cname_exe {
+    ...
+  }
+```
