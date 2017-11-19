@@ -294,6 +294,7 @@ Depois de quase tudo explicado nos minimos detalhes, segue um resumo final:
 ___
 
 1. [ID e Nomeação de Classes](#classnaming)
+1. [Seletores de Tipos](#typeselectors)
 
 > O formato de código escolhido deve garantir que o código seja: Fácil de ler, Fácil de comentar, Minimizar as chances de introduizir erros, e Resultar em diffs e blames úteis.
 ~ Nicolas Gallagher
@@ -312,6 +313,31 @@ Use nomes legiveis sempre em caixa baixa e que faça referência direta com o pr
 ```css
   /* não recomendado */
   .Cname_exe {
+    ...
+  }
+```
+<a name="typeselectors"></a>
+#### 2.2 Seletores
+
+Por motivos de performance, evite selecionar por hierarquia.
+
+```css
+  /* recomendado */
+  #alert {
+    ...
+  }
+
+  .alert-example {
+    ...
+  }
+```
+```css
+  /* não recomendado */
+  ul#alert-example {
+    ...
+  }
+
+  div.alert {
     ...
   }
 ```
