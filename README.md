@@ -319,25 +319,19 @@ Use nomes legiveis sempre em caixa baixa e que faça referência direta com o pr
 <a name="typeselectors"></a>
 #### 2.2 Seletores
 
-Por motivos de performance, evite selecionar por hierarquia.
+Por motivos de performance, evite selecionar como base pela hierarquia, use com classe :v.
 
 ```css
   /* recomendado */
-  #alert {
-    ...
-  }
-
-  .alert-example {
-    ...
-  }
+  .navbar { ... }
+  .nav { ... }
+  .nav-item { ... }
+  .nav-link { ... }
 ```
 ```css
   /* não recomendado */
-  ul#alert-example {
-    ...
-  }
-
-  div.alert {
-    ...
-  }
+  .navbar ul { ... }
+  .navbar ul li { ... }
+  .navbar ul li a { ... }
 ```
+*Thanks [@LFeh](https://github.com/LFeh), exemplo perfeito!*
