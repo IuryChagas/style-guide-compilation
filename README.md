@@ -287,13 +287,14 @@ Depois de quase tudo explicado nos minimos detalhes, segue um resumo final:
 </body>
 </html>
 ```
-**[⬆ voltar ao topo](#guia-basico-de-estilo-html-e-css)**
+**[⬆ voltar ao topo](#--guia-basico-de-estilo-html-e-css)**
 
 <a name="css"></a>
 ## 2. Formatação e Estilo no CSS
 
 1. [ID e Nomeação de Classes](#classnaming)
 1. [Seletores de Tipos](#typeselectors)
+1. [Regras de Formatação](#formattingrules)
 
 > O formato de código escolhido deve garantir que o código seja: fácil ler, fácil comentar, minimizar as chances de introduizir erros, e resultar em `diffs` e `blames` úteis.
 ~ Nicolas Gallagher
@@ -334,3 +335,23 @@ Por motivos de performance, evite selecionar como base pela hierarquia, use com 
   .navbar ul li a { ... }
 ```
 *Thanks [@LFeh](https://github.com/LFeh), exemplo perfeito!*
+
+<a name="#formattingrules"></a>
+#### 2.3 Formatação, Regras e Sintaxe
+
+Seletores que recebem os mesmos valores devem estar separados um em cada linha
+
+```css
+/* recomendado */
+  .selector-a,
+  .seletor-b,
+  .seletor-c {
+    ...
+}
+```
+```css
+/* não recomendado */
+  .selector-a, .seletor-b, .seletor-c {
+   ...
+}
+```
