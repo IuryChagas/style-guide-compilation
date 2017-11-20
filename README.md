@@ -1,6 +1,6 @@
-<h3>:clipboard:</h3>
-
-# Guia Basico de Estilo HTML e CSS
+<h1 align="center">
+  Guia Basico de Estilo HTML e CSS
+</h1>
 
 Das pesquisas por convensões de padronização e organização de código surgiu a necessidade de documentar as preferências de escrita adotada por renomados e quase anonimos desenvolvedores ao redor da web. 
 
@@ -49,9 +49,9 @@ portanto essa declaração deve ser a primeira informação em seu html.
 
 Embora o HTML5 permite misturar letras MAIÚSCULAS e minúsculas, use somente "lowercase"
 
-- [x] *Código mais limpo*
-- [x] *Facil digitar*
-- [x] *Sem distrações na leitura*
+☑ *Código mais limpo*<br>
+☑ *Facil digitar*<br>
+☑ *Sem distrações na leitura*
 
 ```html
 <!-- recomendado -->
@@ -291,12 +291,11 @@ Depois de quase tudo explicado nos minimos detalhes, segue um resumo final:
 
 <a name="css"></a>
 ## 2. Formatação e Estilo no CSS
-___
 
 1. [ID e Nomeação de Classes](#classnaming)
 1. [Seletores de Tipos](#typeselectors)
 
-> O formato de código escolhido deve garantir que o código seja: Fácil de ler, Fácil de comentar, Minimizar as chances de introduizir erros, e Resultar em diffs e blames úteis.
+> O formato de código escolhido deve garantir que o código seja: fácil ler, fácil comentar, minimizar as chances de introduizir erros, e resultar em `diffs` e `blames` úteis.
 ~ Nicolas Gallagher
 
 <a name="classnaming"></a>
@@ -305,16 +304,16 @@ ___
 Use nomes legiveis sempre em caixa baixa e que faça referência direta com o propósito/finalidade do elemento.
 
 ```css
-  /* recomendado */
+/* recomendado */
   .class-name-example {
     ...
-  }
+}
 ```
 ```css
-  /* não recomendado */
+/* não recomendado */
   .Cname_exe {
     ...
-  }
+}
 ```
 <a name="typeselectors"></a>
 #### 2.2 Seletores
@@ -322,14 +321,14 @@ Use nomes legiveis sempre em caixa baixa e que faça referência direta com o pr
 Por motivos de performance, evite selecionar como base pela hierarquia, use com classe :v.
 
 ```css
-  /* recomendado */
+/* recomendado */
   .navbar { ... }
   .nav { ... }
   .nav-item { ... }
   .nav-link { ... }
 ```
 ```css
-  /* não recomendado */
+/* não recomendado */
   .navbar ul { ... }
   .navbar ul li { ... }
   .navbar ul li a { ... }
