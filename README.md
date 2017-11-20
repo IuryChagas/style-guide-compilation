@@ -372,5 +372,18 @@ Com o intuito de facilitar na edição de multiplas linhas, propriedades que pre
   -ms-transform: rotate(-2deg);
   -o-transform: rotate(-2deg);
   transform: rotate(-2deg);
- }
+}
+```
+Propriedades com especificação de valores muito longos separados por `,` deveriam ser organizadas de maneira a melhorar legibilidade, segue uma sugestão simples.
+
+```css
+  /* recomendado */
+ .selector {
+    background-image:
+      linear-gradient(#fff, #ccc),
+      linear-gradient(#f3c, #4ec);
+    box-shadow:
+      1px 1px 1px #000,
+      2px 2px 1px 1px #ccc inset;
+}
 ```
