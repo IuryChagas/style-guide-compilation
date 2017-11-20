@@ -320,7 +320,6 @@ Use nomes legiveis sempre em caixa baixa e que faça referência direta com o pr
 #### 2.2 Seletores
 
 Por motivos de performance, evite selecionar como base pela hierarquia, use com classe :v.
-
 ```css
 /* recomendado */
   .navbar { ... }
@@ -340,7 +339,6 @@ Por motivos de performance, evite selecionar como base pela hierarquia, use com 
 #### 2.3 Formatação, Regras e Sintaxe
 
 Seletores que recebem os mesmos valores devem estar separados um em cada linha
-
 ```css
 /* recomendado */
   .selector-a,
@@ -354,4 +352,25 @@ Seletores que recebem os mesmos valores devem estar separados um em cada linha
   .selector-a, .seletor-b, .seletor-c {
    ...
 }
+```
+Com o intuito de facilitar na edição de multiplas linhas, propriedades que precisam de prefixos use da seguinte forma:
+```css
+/* recomendado */
+.element {
+  -webkit-transform: rotate(-2deg);
+     -moz-transform: rotate(-2deg);
+      -ms-transform: rotate(-2deg);
+       -o-transform: rotate(-2deg);
+          transform: rotate(-2deg);
+}
+```
+```css
+/* não recomendado */
+.element {
+  -webkit-transform: rotate(-2deg);
+  -moz-transform: rotate(-2deg);
+  -ms-transform: rotate(-2deg);
+  -o-transform: rotate(-2deg);
+  transform: rotate(-2deg);
+ }
 ```
