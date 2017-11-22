@@ -300,3 +300,18 @@ Depois de quase tudo explicado nos minimos detalhes, segue um resumo final:
 <a name="class-name-style"></a>
 #### 2.1 Como Nomear Seletores
 
+<a name="readable-classes"></a>
+Use nomes legiveis e que faça referência direta com o propósito/finalidade do elemento
+
+```css
+/* recomendado */
+  .class-name-example {
+    ...
+  }
+```
+```css
+/* não recomendado */
+  .Cname_exe {
+    ...
+  }
+```
