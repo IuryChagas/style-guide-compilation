@@ -295,6 +295,7 @@ Depois de quase tudo explicado nos minimos detalhes, segue um resumo final:
 1. [Como Nomear Seletores](#class-name-style)
     - [hífens](#hyphens)
     - [lowercase](#lowercase)
+    - [não use ids, use classes](#ids-classes)
 
 > O formato de código escolhido deve garantir que o código seja: fácil ler, fácil comentar, minimizar as chances de introduizir erros, e resultar em `diffs` e `blames` úteis.
 ~ Nicolas Gallagher
@@ -348,6 +349,29 @@ lowercase, todo o código sempre em caixa baixa
   }
  /* ou */
   .ThumbNail {
+    ...
+  }
+```
+<a name="ids-classes"></a>
+Não use ids, use classes
+
+```css
+/* recomendado */
+  .footer {
+    ...
+  }
+
+  .aside {
+    ...
+  }
+```
+```css
+/* não recomendado */
+  #footer {
+    ...
+  }
+
+  #aside {
     ...
   }
 ```
