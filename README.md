@@ -294,6 +294,7 @@ Depois de quase tudo explicado nos minimos detalhes, segue um resumo final:
 
 1. [Como Nomear Seletores](#class-name-style)
     - [hífens](#hyphens)
+    - [lowercase](#lowercase)
 
 > O formato de código escolhido deve garantir que o código seja: fácil ler, fácil comentar, minimizar as chances de introduizir erros, e resultar em `diffs` e `blames` úteis.
 ~ Nicolas Gallagher
@@ -328,6 +329,25 @@ Use "traço" hífen `-` ao inves de undeline `_`
 ```css
 /* não recomendado */
   .main_header {
+    ...
+  }
+```
+<a name="lowercase"></a>
+lowercase, todo o código sempre em caixa baixa
+
+```css
+/* recomendado */
+  .thumbnail {
+    ...
+  }
+```
+```css
+/* não recomendado */
+  .THUMBNAIL {
+    ...
+  }
+ /* ou */
+  .ThumbNail {
     ...
   }
 ```
