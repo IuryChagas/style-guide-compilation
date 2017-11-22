@@ -292,98 +292,11 @@ Depois de quase tudo explicado nos minimos detalhes, segue um resumo final:
 <a name="css"></a>
 ## 2. Formatação e Estilo no CSS
 
-1. [ID e Nomeação de Classes](#classnaming)
-1. [Seletores de Tipos](#typeselectors)
-1. [Regras de Formatação](#formattingrules)
+1. [Como Nomear Seletores](#class-name-style)
 
 > O formato de código escolhido deve garantir que o código seja: fácil ler, fácil comentar, minimizar as chances de introduizir erros, e resultar em `diffs` e `blames` úteis.
 ~ Nicolas Gallagher
 
-<a name="classnaming"></a>
-#### 2.1 Nomeação de Classes, IDs
+<a name="class-name-style"></a>
+#### 2.1 Como Nomear Seletores
 
-Use nomes legiveis sempre em caixa baixa e que faça referência direta com o propósito/finalidade do elemento.
-
-```css
-/* recomendado */
-  .class-name-example {
-    ...
-}
-```
-```css
-/* não recomendado */
-  .Cname_exe {
-    ...
-}
-```
-<a name="typeselectors"></a>
-#### 2.2 Seletores
-
-Por motivos de performance, evite selecionar como base pela hierarquia, use com classe :v.
-```css
-/* recomendado */
-  .navbar { ... }
-  .nav { ... }
-  .nav-item { ... }
-  .nav-link { ... }
-```
-```css
-/* não recomendado */
-  .navbar ul { ... }
-  .navbar ul li { ... }
-  .navbar ul li a { ... }
-```
-*Thanks [@LFeh](https://github.com/LFeh), exemplo perfeito!*
-
-<a name="#formattingrules"></a>
-#### 2.3 Formatação, Regras e Sintaxe
-
-Seletores que recebem os mesmos valores devem estar separados um em cada linha
-```css
-/* recomendado */
-  .selector-a,
-  .seletor-b,
-  .seletor-c {
-    ...
-}
-```
-```css
-/* não recomendado */
-  .selector-a, .seletor-b, .seletor-c {
-   ...
-}
-```
-Com o intuito de facilitar na edição de multiplas linhas, propriedades que precisam de prefixos use da seguinte forma:
-```css
-/* recomendado */
-.element {
-  -webkit-transform: rotate(-2deg);
-     -moz-transform: rotate(-2deg);
-      -ms-transform: rotate(-2deg);
-       -o-transform: rotate(-2deg);
-          transform: rotate(-2deg);
-}
-```
-```css
-/* não recomendado */
-.element {
-  -webkit-transform: rotate(-2deg);
-  -moz-transform: rotate(-2deg);
-  -ms-transform: rotate(-2deg);
-  -o-transform: rotate(-2deg);
-  transform: rotate(-2deg);
-}
-```
-Propriedades com especificação de valores muito longos separados por `,` deveriam ser organizadas de maneira a melhorar legibilidade, segue uma sugestão simples.
-
-```css
-  /* recomendado */
- .selector {
-    background-image:
-      linear-gradient(#fff, #ccc),
-      linear-gradient(#f3c, #4ec);
-    box-shadow:
-      1px 1px 1px #000,
-      2px 2px 1px 1px #ccc inset;
-}
-```
