@@ -293,6 +293,7 @@ Depois de quase tudo explicado nos minimos detalhes, segue um resumo final:
 ## 2. Formatação e Estilo no CSS
 
 1. [Como Nomear Seletores](#class-name-style)
+    - [hífens](#hyphens)
 
 > O formato de código escolhido deve garantir que o código seja: fácil ler, fácil comentar, minimizar as chances de introduizir erros, e resultar em `diffs` e `blames` úteis.
 ~ Nicolas Gallagher
@@ -312,6 +313,21 @@ Use nomes legiveis e que faça referência direta com o propósito/finalidade do
 ```css
 /* não recomendado */
   .Cname_exe {
+    ...
+  }
+```
+<a name="hyphens"></a>
+Use "traço" hífen `-` ao inves de undeline `_`
+
+```css
+/* recomendado */
+  .main-header {
+    ...
+  }
+```
+```css
+/* não recomendado */
+  .main_header {
     ...
   }
 ```
