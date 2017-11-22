@@ -293,9 +293,10 @@ Depois de quase tudo explicado nos minimos detalhes, segue um resumo final:
 ## 2. Formatação e Estilo no CSS
 
 1. [Como Nomear Seletores](#class-name-style)
-    - [hífens](#hyphens)
-    - [lowercase](#lowercase)
-    - [não use ids, use classes](#ids-classes)
+    - [Hífens](#hyphens)
+    - [Lowercase](#lowercase)
+    - [Não use ids, use Classes](#ids-classes)
+    - [Seleção por aninhamento](#nesting-selection)
 
 > O formato de código escolhido deve garantir que o código seja: fácil ler, fácil comentar, minimizar as chances de introduizir erros, e resultar em `diffs` e `blames` úteis.
 ~ Nicolas Gallagher
@@ -375,3 +376,19 @@ Não use ids, use classes
     ...
   }
 ```
+<a name="nesting-selection"></a>
+Por motivos de performance, evite selecionar como base pela hierarquia, use com classe :v.
+```css
+/* recomendado */
+  .navbar { ... }
+  .nav { ... }
+  .nav-item { ... }
+  .nav-link { ... }
+```
+```css
+/* não recomendado */
+  .navbar ul { ... }
+  .navbar ul li { ... }
+  .navbar ul li a { ... }
+```
+*Thanks [@LFeh](https://github.com/LFeh), exemplo perfeito!*
