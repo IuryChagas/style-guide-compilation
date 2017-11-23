@@ -303,7 +303,8 @@ Depois de quase tudo explicado nos minimos detalhes, segue um resumo final:
 #### 2.2 [Como Montar uma Declaração](#declaration)
 
   - [Espaço ao abrir `{` e apos `:`](#add-space)
-  - [incluir `;` e alinhar fechamento `}`](#semicolon-closekey)
+  - [Incluir `;` e alinhar fechamento `}`](#semicolon-closekey)
+  - [Configurar o tab para 2 espaços](#soft-tabs)
 
 > O formato de código escolhido deve garantir que o código seja: fácil ler, fácil comentar, minimizar as chances de introduizir erros, e resultar em `diffs` e `blames` úteis.
 ~ Nicolas Gallagher
@@ -408,7 +409,7 @@ Por motivos de performance, evite selecionar como base pela hierarquia, use com 
 <a name="add-space"></a>
 Adicione um espaço:
 
-▸ Antes de abrir as chaves `{`,<br>
+▸ Antes de abrir chave `{`,<br>
 ▸ Depois dos `:` da propriedade.
 
 ```css
@@ -440,4 +441,34 @@ Nunca esqueça de:
   .footer {
     margin: 10px
     }
+```
+<a name="soft-tabs"></a>
+Configure seu editor para tabs com 2 espaços: use [editorconfig.org](http://editorconfig.org/ "EditorConfig helps developers define and maintain consistent coding styles between different editors and IDEs.")
+
+```css
+/* recomendado */
+  .sotf-tabs {
+    position: absolute;
+    top: 0;
+    left: 2em;
+    width: 2em;
+  }
+```
+```css
+/* não recomendado */
+  .sof-tabs {
+       position: absolute;
+       top: 0;
+       left: 2em;
+       width: 2em;
+  }
+```
+```css
+ /* não recomendado */
+.sof-tabs {
+position: absolute;
+top: 0;
+left: 2em;
+width: 2em;
+}
 ```
