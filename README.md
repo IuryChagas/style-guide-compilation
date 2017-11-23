@@ -303,6 +303,7 @@ Depois de quase tudo explicado nos minimos detalhes, segue um resumo final:
 #### 2.2 [Como Montar uma Declaração](#declaration)
 
   - [Espaço ao abrir `{` e apos `:`](#add-space)
+  - [incluir `;` e alinhar fechamento `}`](#semicolon-closekey)
 
 > O formato de código escolhido deve garantir que o código seja: fácil ler, fácil comentar, minimizar as chances de introduizir erros, e resultar em `diffs` e `blames` úteis.
 ~ Nicolas Gallagher
@@ -421,4 +422,22 @@ Adicione um espaço:
   .article{
     padding:1em;
   }
+```
+<a name="semicolon-closekey"></a>
+Nunca esqueça de:
+
+▸ Incluir `;` ao finalizar a declaração dos valores<br>
+▸ Manter o fechamento da chave `}` em uma nova linha na mesma coluna do primeiro caractere do bloco declarativo.
+
+```css
+/* recomendado */
+  .footer {
+    margin: 10px;
+  }
+```
+```css
+/* não recomendado */
+  .footer {
+    margin: 10px
+    }
 ```
