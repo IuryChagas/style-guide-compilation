@@ -292,13 +292,17 @@ Depois de quase tudo explicado nos minimos detalhes, segue um resumo final:
 <a name="css"></a>
 ## 2. Formatação e Estilo no CSS
 
-#### 1. [Como Nomear Seletores](#class-name-style)
+#### 2.1 [Como Nomear Seletores](#class-name-style)
 
   - [Classes Semânticas](#readable-classes)
   - [Hífens](#hyphens)
   - [Lowercase](#lowercase)
   - [Não use ids, use Classes](#ids-classes)
   - [Seleção por aninhamento](#nesting-selection)
+
+#### 2.2 [Como Montar uma Declaração](#declaration)
+
+  - [Espaço ao abrir `{` e apos `:`](#add-space)
 
 > O formato de código escolhido deve garantir que o código seja: fácil ler, fácil comentar, minimizar as chances de introduizir erros, e resultar em `diffs` e `blames` úteis.
 ~ Nicolas Gallagher
@@ -396,3 +400,25 @@ Por motivos de performance, evite selecionar como base pela hierarquia, use com 
   .navbar ul li a { ... }
 ```
 *Thanks [@LFeh](https://github.com/LFeh), exemplo perfeito!*
+
+<a name="declaration"></a>
+#### 2.2 Como Montar uma Declaração
+
+<a name="add-space"></a>
+Adicione um espaço:
+
+▸ Antes de abrir as chaves `{`,<br>
+▸ Depois dos `:` da propriedade.
+
+```css
+/* recomendado */
+  .article {
+    padding: 1em;
+  }
+```
+```css
+/* não recomendado */
+  .article{
+    padding:1em;
+  }
+```
