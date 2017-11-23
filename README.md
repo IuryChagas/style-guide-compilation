@@ -292,11 +292,13 @@ Depois de quase tudo explicado nos minimos detalhes, segue um resumo final:
 <a name="css"></a>
 ## 2. Formatação e Estilo no CSS
 
-1. [Como Nomear Seletores](#class-name-style)
-    - [Hífens](#hyphens)
-    - [Lowercase](#lowercase)
-    - [Não use ids, use Classes](#ids-classes)
-    - [Seleção por aninhamento](#nesting-selection)
+#### 1. [Como Nomear Seletores](#class-name-style)
+
+  - [Classes Semânticas](#readable-classes)
+  - [Hífens](#hyphens)
+  - [Lowercase](#lowercase)
+  - [Não use ids, use Classes](#ids-classes)
+  - [Seleção por aninhamento](#nesting-selection)
 
 > O formato de código escolhido deve garantir que o código seja: fácil ler, fácil comentar, minimizar as chances de introduizir erros, e resultar em `diffs` e `blames` úteis.
 ~ Nicolas Gallagher
@@ -304,8 +306,10 @@ Depois de quase tudo explicado nos minimos detalhes, segue um resumo final:
 <a name="class-name-style"></a>
 #### 2.1 Como Nomear Seletores
 
+Nomear com base no que é, em vez de como se parece ou se comporta é o fundamento de um CSS bem arquitetado e manutenível.
+
 <a name="readable-classes"></a>
-Use nomes legiveis e que faça referência direta com o propósito/finalidade do elemento
+Use nomes legiveis e que faça referência direta com o propósito/finalidade do elemento.
 
 ```css
 /* recomendado */
