@@ -305,7 +305,8 @@ Depois de quase tudo explicado nos minimos detalhes, segue um resumo final:
   - [Espaço ao abrir `{` e apos `:`](#add-space)
   - [Incluir `;` e alinhar fechamento `}`](#semicolon-closekey)
   - [Configurar soft-tabs para 2 espaços](#soft-tabs)
-  - [Usando aspas duplas `""`](#doublequotes)
+  - [Usando aspas duplas `""`](#doublequotes-css)
+  - [shortheand de valores](#shortheand)
 
 > O formato de código escolhido deve garantir que o código seja: fácil ler, fácil comentar, minimizar as chances de introduizir erros, e resultar em `diffs` e `blames` úteis.
 ~ Nicolas Gallagher
@@ -473,7 +474,7 @@ left: 2em;
 width: 2em;
 }
 ```
-<a name="doublequotes"></a>
+<a name="doublequotes-css"></a>
 Para valores de propriedades que requerem cotações "aspas", Não use aspas simples`''`  mantenha `""`
 
 ```css
@@ -499,5 +500,28 @@ Para valores de propriedades que requerem cotações "aspas", Não use aspas sim
 
   .nav-item:after {
     content: '';
+  }
+```
+Shorthand "Abreviações de Valores", Use sempre que possível
+
+```css
+/* recomendado */
+  .title {
+    font: 100%/1.6 palatino, georgia, serif;
+    padding: 0 1em 2em;
+    border-top: 0;
+  }
+```
+```css
+/* não recomendado */
+ .title {
+    font-family: palatino, georgia, serif;
+    font-size: 100%;
+    line-height: 1.6;
+    padding-top: 0;
+    padding-left: 1em;
+    padding-right: 1em;
+    padding-bottom: 2em;
+    border-top-style: none;
   }
 ```
