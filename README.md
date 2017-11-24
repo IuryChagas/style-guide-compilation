@@ -308,6 +308,7 @@ Depois de quase tudo explicado nos minimos detalhes, segue um resumo final:
   - [Usando aspas duplas `""`](#doublequotes-css)
   - [Shortheand em propriedades](#shortheand)
   - [Abreviações em valores](#unit-reset)
+  - [Seletores com as mesmas declarações](#declaration-single-line)
 
 > O formato de código escolhido deve garantir que o código seja: fácil ler, fácil comentar, minimizar as chances de introduizir erros, e resultar em `diffs` e `blames` úteis.
 ~ Nicolas Gallagher
@@ -576,5 +577,22 @@ Para valores em hexadecimal que permitem a notação de 3 caracteres use a forma
 /* não recomendado */
   .page-wrap {
     background-color: rgba(0,0,0,0.5);
+  }
+```
+<a name="declaration-single-line"></a>
+Seletores que recebem os mesmos valores devem estar separados um em cada linha
+
+```css
+/* recomendado */
+  .selector-a,
+  .seletor-b,
+  .seletor-c {
+    width: 30%;
+  }
+```
+```css
+/* não recomendado */
+  .selector-a, .seletor-b, .seletor-c {
+    width: 30%;
   }
 ```
