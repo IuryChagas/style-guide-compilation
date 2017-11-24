@@ -306,7 +306,8 @@ Depois de quase tudo explicado nos minimos detalhes, segue um resumo final:
   - [Incluir `;` e alinhar fechamento `}`](#semicolon-closekey)
   - [Configurar soft-tabs para 2 espaços](#soft-tabs)
   - [Usando aspas duplas `""`](#doublequotes-css)
-  - [shortheand de valores](#shortheand)
+  - [Shortheand em propriedades](#shortheand)
+  - [Abreviações em valores](#unit-reset)
 
 > O formato de código escolhido deve garantir que o código seja: fácil ler, fácil comentar, minimizar as chances de introduizir erros, e resultar em `diffs` e `blames` úteis.
 ~ Nicolas Gallagher
@@ -502,7 +503,8 @@ Para valores de propriedades que requerem cotações "aspas", Não use aspas sim
     content: '';
   }
 ```
-Shorthand "Abreviações de Valores", Use sempre que possível
+<a name="shortheand"></a>
+Algumas propriedades permitem setar valores de outras propriedades simultaneamente seguindo uma regra de inserção conhecida como _**shorthand**_ "_Abreviações de propriedade_", Use sempre que possível
 
 ```css
 /* recomendado */
@@ -523,5 +525,56 @@ Shorthand "Abreviações de Valores", Use sempre que possível
     padding-right: 1em;
     padding-bottom: 2em;
     border-top-style: none;
+  }
+```
+_Aprenda mais sobre:_<br>
+▸ [Introduction to CSS Shorthand](https://www.sitepoint.com/introduction-css-shorthand/ "SitePoint - Introduction to CSS Shorthand")<br>
+▸ [Propriedades shorthand](https://developer.mozilla.org/pt-BR/docs/Web/CSS/Shorthand_properties "MDN web docs - Propriedades shorthand")
+
+<a name="unit-reset"></a>
+Zerando unidades de medidas, Não é necessário especificar o tipo de unidade que pretende zerar, economize bytes!
+
+```css
+/* recomendado */
+  .title {
+    border-top: 0;
+    padding: 0 1em 0;
+    opacity: .5;
+  }
+```
+```css
+/* não recomendado */
+  .title {
+    padding: 0px;
+    margin: 0em;
+    opacity: 0.5;
+  }
+```
+Para valores em hexadecimal que permitem a notação de 3 caracteres use a forma mais sucinta.
+
+```css
+/* recomendado */
+  .card {
+    background-color: #ebc;
+    color: #222;
+  }
+```
+```css
+/* não recomendado */
+  .card {
+    background-color: #eebbcc;
+    color: #222222;
+  }
+```
+```css
+/* recomendado */
+  .page-wrap {
+    background-color: rgba(0,0,0,.5);
+  }
+```
+```css
+/* não recomendado */
+  .page-wrap {
+    background-color: rgba(0,0,0,0.5);
   }
 ```
