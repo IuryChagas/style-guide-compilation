@@ -304,7 +304,8 @@ Depois de quase tudo explicado nos minimos detalhes, segue um resumo final:
 
   - [Espaço ao abrir `{` e apos `:`](#add-space)
   - [Incluir `;` e alinhar fechamento `}`](#semicolon-closekey)
-  - [Configurar o tab para 2 espaços](#soft-tabs)
+  - [Configurar soft-tabs para 2 espaços](#soft-tabs)
+  - [Usando aspas duplas `""`](#doublequotes)
 
 > O formato de código escolhido deve garantir que o código seja: fácil ler, fácil comentar, minimizar as chances de introduizir erros, e resultar em `diffs` e `blames` úteis.
 ~ Nicolas Gallagher
@@ -471,4 +472,32 @@ top: 0;
 left: 2em;
 width: 2em;
 }
+```
+<a name="doublequotes"></a>
+Para valores de propriedades que requerem cotações "aspas", Não use aspas simples`''`  mantenha `""`
+
+```css
+/* recomendado */
+  .comments-area {
+    font-family: "Arial Black", Arial, sans-serif;
+  }
+
+  .nav-item:after {
+    content: "";
+  }
+
+  .selector[type="text"] {
+    ...
+    ...
+  }
+```
+```css
+/* não recomendado */
+  .comments-area {
+    font-family: 'Arial Black', Arial, sans-serif;
+  }
+
+  .nav-item:after {
+    content: '';
+  }
 ```
