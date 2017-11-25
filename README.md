@@ -309,7 +309,8 @@ Depois de quase tudo explicado nos minimos detalhes, segue um resumo final:
   - [Shortheand em propriedades](#shortheand)
   - [Abreviações em valores](#unit-reset)
   - [Seletores com as mesmas declarações](#declaration-single-line)
-  - [Indentação de prefixos e valores](#prefixes-indentation)
+  - [Indentação no uso de prefixos](#prefixes-indentation)
+  - [Valores muito extensos separados por `,`](#extensive-values)
 
 > O formato de código escolhido deve garantir que o código seja: fácil ler, fácil comentar, minimizar as chances de introduizir erros, e resultar em `diffs` e `blames` úteis.
 ~ Nicolas Gallagher
@@ -617,5 +618,27 @@ Seletores que recebem os mesmos valores devem estar separados um em cada linha
     -ms-transform: rotate(-2deg);
     -o-transform: rotate(-2deg);
     transform: rotate(-2deg);
+  }
+```
+
+<a name="extensive-values"></a>
+Propriedades com especificações de valores muito extensos separados por `,` deveriam ser organizadas de maneira a melhorar legibilidade, segue uma sugestão simples.
+
+```css
+/* recomendado */
+.selector {
+  background-image:
+    linear-gradient(#fff, #ccc),
+    linear-gradient(#f3c, #4ec);
+  box-shadow:
+    1px 1px 1px #000,
+    2px 2px 1px 1px #ccc inset;
+  }
+```
+```css
+/* não recomendado */
+  .selector {
+    background-image: linear-gradient(#fff, #ccc), linear-gradient(#f3c, #4ec);
+    box-shadow: 1px 1px 1px #000, 2px 2px 1px 1px #ccc inset;
   }
 ```
