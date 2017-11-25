@@ -309,6 +309,7 @@ Depois de quase tudo explicado nos minimos detalhes, segue um resumo final:
   - [Shortheand em propriedades](#shortheand)
   - [Abreviações em valores](#unit-reset)
   - [Seletores com as mesmas declarações](#declaration-single-line)
+  - [Indentação de prefixos e valores](#prefixes-indentation)
 
 > O formato de código escolhido deve garantir que o código seja: fácil ler, fácil comentar, minimizar as chances de introduizir erros, e resultar em `diffs` e `blames` úteis.
 ~ Nicolas Gallagher
@@ -594,5 +595,27 @@ Seletores que recebem os mesmos valores devem estar separados um em cada linha
 /* não recomendado */
   .selector-a, .seletor-b, .seletor-c {
     width: 30%;
+  }
+```
+<a name="prefixes-indentation"></a>
+  Com o intuito de facilitar na edição de multiplas linhas, propriedades que precisam de prefixos use da seguinte forma:
+```css
+/* recomendado */
+  .element {
+    -webkit-transform: rotate(-2deg);
+       -moz-transform: rotate(-2deg);
+        -ms-transform: rotate(-2deg);
+         -o-transform: rotate(-2deg);
+            transform: rotate(-2deg);
+  }
+```
+```css
+/* não recomendado */
+  .element {
+    -webkit-transform: rotate(-2deg);
+    -moz-transform: rotate(-2deg);
+    -ms-transform: rotate(-2deg);
+    -o-transform: rotate(-2deg);
+    transform: rotate(-2deg);
   }
 ```
