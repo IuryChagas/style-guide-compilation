@@ -297,7 +297,7 @@ Depois de quase tudo explicado nos minimos detalhes, segue um resumo final:
   - [Classes Semânticas](#readable-classes)
   - [Hífens](#hyphens)
   - [Lowercase](#lowercase)
-  - [Não use ids, use Classes](#ids-classes)
+  - [Não use IDs, use Classes](#ids-classes)
   - [Seleção por aninhamento](#nesting-selection)
 
 #### 2.2 [Como Montar uma Declaração](#declaration)
@@ -311,6 +311,7 @@ Depois de quase tudo explicado nos minimos detalhes, segue um resumo final:
   - [Seletores com as mesmas declarações](#declaration-single-line)
   - [Indentação no uso de prefixos](#prefixes-indentation)
   - [Valores muito extensos separados por `,`](#extensive-values)
+  - [Ordem de declarção:](#declaration-order)
 
 > O formato de código escolhido deve garantir que o código seja: fácil ler, fácil comentar, minimizar as chances de introduizir erros, e resultar em `diffs` e `blames` úteis.
 ~ Nicolas Gallagher
@@ -642,3 +643,5 @@ Propriedades com especificações de valores muito extensos separados por `,` de
     box-shadow: 1px 1px 1px #000, 2px 2px 1px 1px #ccc inset;
   }
 ```
+<a name="declaration-order"></a>
+Quanto a ordem das declarações, organize as propriedades agrupadas por ordem **relacional** ou por ordem **alfabetica**, defina um dos tipos e mantenha o padrão em todo o projeto
