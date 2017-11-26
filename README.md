@@ -311,7 +311,8 @@ Depois de quase tudo explicado nos minimos detalhes, segue um resumo final:
   - [Seletores com as mesmas declarações](#declaration-single-line)
   - [Indentação no uso de prefixos](#prefixes-indentation)
   - [Valores muito extensos separados por `,`](#extensive-values)
-  - [Ordem de declarção:](#declaration-order)
+  - [Ordens de declarção:](#declaration-order)
+    - [Ordem Relacional](#relational-order)
 
 > O formato de código escolhido deve garantir que o código seja: fácil ler, fácil comentar, minimizar as chances de introduizir erros, e resultar em `diffs` e `blames` úteis.
 ~ Nicolas Gallagher
@@ -645,3 +646,42 @@ Propriedades com especificações de valores muito extensos separados por `,` de
 ```
 <a name="declaration-order"></a>
 Quanto a ordem das declarações, organize as propriedades agrupadas por ordem **relacional** ou por ordem **alfabetica**, defina um dos tipos e mantenha o padrão em todo o projeto
+
+<a name="relational-order"></a>
+**Propriedades Relacionadas**
+
+```css
+  .selector {
+   /* Posicionamento */
+    position: absolute;
+    z-index: 10;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+
+    /* Display & Box-Model */
+    display: inline-block;
+    overflow: hidden;
+    box-sizing: border-box;
+    width: 100px;
+    height: 100px;
+    padding: 10px;
+    margin: 10px;
+
+    /* Tipografia */
+    font-family: sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #333;
+    text-align: center;
+
+    /* Visual */
+    background-color: #000;
+    border: 10px solid #333;
+    border-radius: 3px;
+
+    /* Outros */
+    opacity: 1;
+  }
+```
