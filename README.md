@@ -315,6 +315,9 @@ Depois de quase tudo explicado nos minimos detalhes, segue um resumo final:
     - [Ordem Relacional](#relational-order)
     - [Alfabética](#alphabetical-order)
 
+#### 2.3 [Como Organizar Blocos Declarativos](#organize-declarative-blocks)
+
+
 > O formato de código escolhido deve garantir que o código seja: fácil ler, fácil comentar, minimizar as chances de introduizir erros, e resultar em `diffs` e `blames` úteis.
 ~ Nicolas Gallagher
 
@@ -702,3 +705,5 @@ _obs: quando houver propriedades com prefixos, tais profixos devem ser ignorados
     text-indent: 2em;
   }
 ```
+<a name="organize-declarative-blocks"></a>
+Como Organizar Blocos Declarativos
