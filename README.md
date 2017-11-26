@@ -318,6 +318,7 @@ Depois de quase tudo explicado nos minimos detalhes, segue um resumo final:
 #### 2.3 [Como Organizar Blocos Declarativos](#organize-declarative-blocks)
 
   - [Manter uma propriedade/valor por linha](#property-per-line)
+  - [Um espaço entre cada bloco declarativo](#space-between-blocks)
 
 > O formato de código escolhido deve garantir que o código seja: fácil ler, fácil comentar, minimizar as chances de introduizir erros, e resultar em `diffs` e `blames` úteis.
 ~ Nicolas Gallagher
@@ -731,5 +732,70 @@ Mantenha uma única declaração propriedade/valor por linha
   }
   .button-darkviolet {
     width: 30%; color: white; background-color: darkviolet;
+  }
+```
+<a name="space-between-blocks"></a>
+Adicione um espaço entre cada bloco de declarativo
+
+```css
+/* recomendado */
+  .marketing-header h1 {
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 42px;
+    font-weight: 300;
+  }
+
+  .marketing-header .lead {
+    max-width: 750px;
+    margin: 10px auto 0;
+    color: #586069;
+  }
+
+  .marketing-header .btn {
+    padding: 12px 20px;
+    margin-top: 15px;
+    font-size: 18px;
+    font-weight: normal;
+    border-radius: 6px;
+  }
+
+  .marketing-section {
+    position: relative;
+    padding: 80px 0;
+    font-size: 16px;
+    line-height: 1.5;
+    text-align: center;
+    border-bottom: 1px solid #e5e5e5;
+  }
+```
+```css
+/* não recomendado */
+  .marketing-header h1 {
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 42px;
+    font-weight: 300;
+  }
+  .marketing-header .lead {
+    max-width: 750px;
+    margin: 10px auto 0;
+    color: #586069;
+  }
+  .marketing-header .btn {
+    padding: 12px 20px;
+    margin-top: 15px;
+    font-size: 18px;
+    font-weight: normal;
+    border-radius: 6px;
+  }
+  .marketing-section {
+    position: relative;
+    padding-top: 80px;
+    padding-bottom: 80px;
+    font-size: 16px;
+    line-height: 1.5;
+    text-align: center;
+    border-bottom: 1px solid #e5e5e5;
   }
 ```
