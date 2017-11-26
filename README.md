@@ -317,6 +317,7 @@ Depois de quase tudo explicado nos minimos detalhes, segue um resumo final:
 
 #### 2.3 [Como Organizar Blocos Declarativos](#organize-declarative-blocks)
 
+  - [Manter uma propriedade/valor por linha](#property-per-line)
 
 > O formato de código escolhido deve garantir que o código seja: fácil ler, fácil comentar, minimizar as chances de introduizir erros, e resultar em `diffs` e `blames` úteis.
 ~ Nicolas Gallagher
@@ -707,3 +708,28 @@ _obs: quando houver propriedades com prefixos, tais profixos devem ser ignorados
 ```
 <a name="organize-declarative-blocks"></a>
 Como Organizar Blocos Declarativos
+
+<a name="property-per-line"></a>
+Mantenha uma única declaração propriedade/valor por linha
+
+```css
+/* recomendado */
+  .button-darkblue {
+    color: whitesmoke;
+    background-color: darkblue;
+  }
+
+  .button-darkviolet {
+    color: white;
+    background-color: darkviolet;
+  }
+```
+```css
+/* não recomendado */
+  .button-darkblue {
+    width: 30%; color: whitesmoke; background-color: darkblue;
+  }
+  .button-darkviolet {
+    width: 30%; color: white; background-color: darkviolet;
+  }
+```
