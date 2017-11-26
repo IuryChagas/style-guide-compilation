@@ -320,6 +320,7 @@ Depois de quase tudo explicado nos minimos detalhes, segue um resumo final:
   - [Manter uma propriedade/valor por linha](#property-per-line)
   - [Um espaço entre cada bloco declarativo](#space-between-blocks)
   - [Declarações com apenas uma propriedade/valor](#single-value-selectors)
+  - [`@Media Queries` onde as queremos](#media-queries)
 
 > O formato de código escolhido deve garantir que o código seja: fácil ler, fácil comentar, minimizar as chances de introduizir erros, e resultar em `diffs` e `blames` úteis.
 ~ Nicolas Gallagher
@@ -816,5 +817,20 @@ Matenha as declarações de *propriedade/valor único* em apenas uma linha
 
   .button-darkviolet {
     background-color: darkviolet;
+  }
+```
+<a name="media-queries"></a>
+Agrupe as `@media queries` junto aos respectivos blocos declarativos a que manipulam, não as coloque em arquivo separado ou ao fim do arquivo principal.
+
+```css
+/* recomendado */
+  .element { ... }
+  .element-avatar { ... }
+  .element-selected { ... }
+
+  @media (min-width: 480px) {
+    .element { ...}
+    .element-avatar { ... }
+    .element-selected { ... }
   }
 ```
