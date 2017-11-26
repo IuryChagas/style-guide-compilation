@@ -313,6 +313,7 @@ Depois de quase tudo explicado nos minimos detalhes, segue um resumo final:
   - [Valores muito extensos separados por `,`](#extensive-values)
   - [Ordens de declarção:](#declaration-order)
     - [Ordem Relacional](#relational-order)
+    - [Alfabética](#alphabetical-order)
 
 > O formato de código escolhido deve garantir que o código seja: fácil ler, fácil comentar, minimizar as chances de introduizir erros, e resultar em `diffs` e `blames` úteis.
 ~ Nicolas Gallagher
@@ -683,5 +684,21 @@ Quanto a ordem das declarações, organize as propriedades agrupadas por ordem *
 
     /* Outros */
     opacity: 1;
+  }
+```
+<a name="alphabetical-order"></a>
+**Em ordem Alfabética**<br>
+_obs: quando houver propriedades com prefixos, tais profixos devem ser ignorados, como exemplo abaixo no `border:`_
+
+```css
+  .selector {
+    background: fuchsia;
+    border: 1px solid;
+   -webkit-border-radius: 4px;
+      -moz-border-radius: 4px;
+           border-radius: 4px;
+    color: black;
+    text-align: center;
+    text-indent: 2em;
   }
 ```
