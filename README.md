@@ -858,3 +858,13 @@ Agrupe as `@media queries` junto aos respectivos blocos declarativos a que manip
   - [CSS Formatting Guidelines - Drupal.org](https://www.drupal.org/docs/develop/standards/css/css-formatting-guidelines)
   - [The Front-End Checklist](https://codeburst.io/the-front-end-checklist-8b2292fdda44)
   - [Git Style Guide](https://github.com/guylhermetabosa/git-style-guide)
+
+**Referências**
+
+da gringa:<br>
+★ [Nicolas Gallagher](https://github.com/necolas)<br>
+★ [Mark Otto](https://github.com/mdo)
+
+de casa:<br>
+★ [Felipe Fialho](https://github.com/LFeh)<br>
+★ [Afonso Pacifer](https://github.com/AfonsoPacifer)
