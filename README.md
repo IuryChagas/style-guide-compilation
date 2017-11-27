@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="https://github.com/IuryChagas/style-guide-compilation/blob/master/logo-sgc.jpg?raw=true" width="180">
+</p>
+
 <h1 align="center">
   Guia Basico de Estilo HTML e CSS
 </h1>
@@ -868,3 +872,8 @@ da gringa:<br>
 de casa:<br>
 ★ [Felipe Fialho](https://github.com/LFeh)<br>
 ★ [Afonso Pacifer](https://github.com/AfonsoPacifer)
+
+<h1></h1>
+<p align="center">:octocat: <br>
+Compartilhe o Conhecimento!
+</p>
