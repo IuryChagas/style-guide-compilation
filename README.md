@@ -852,4 +852,9 @@ Agrupe as `@media queries` junto aos respectivos blocos declarativos a que manip
   - [Naming CSS Stuff Is Really Hard](https://seesparkbox.com/foundry/naming_css_stuff_is_really_hard "Naming CSS by Ethan Muller")<br>
 - Shorthand CSS:
   - [Introduction to CSS Shorthand](https://www.sitepoint.com/introduction-css-shorthand/ "SitePoint - Introduction to CSS Shorthand")<br>
-   - [Propriedades Shorthand](https://developer.mozilla.org/pt-BR/docs/Web/CSS/Shorthand_properties "MDN web docs - Propriedades shorthand")
+   - [Propriedades Shorthand](https://developer.mozilla.org/pt-BR/docs/Web/CSS/Shorthand_properties "MDN web docs - Propriedades shorthand")<br>
+- Explore mais sobre outros Style Guides:
+  - [A List of CSS Style Guides for Inspiration](https://www.webpagefx.com/blog/web-design/css-style-guides/)
+  - [CSS Formatting Guidelines - Drupal.org](https://www.drupal.org/docs/develop/standards/css/css-formatting-guidelines)
+  - [The Front-End Checklist](https://codeburst.io/the-front-end-checklist-8b2292fdda44)
+  - [Git Style Guide](https://github.com/guylhermetabosa/git-style-guide)
