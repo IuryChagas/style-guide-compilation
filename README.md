@@ -12,6 +12,7 @@ Este guia é bem simples e não tendo a pretenção de ser obrigatório, é apen
 
 1. **[HTML](#html)**
 1. **[CSS](#css)**
+1. **[Conclusão](#end)**
 
 <a name="html"></a>
 ## 1. Formatação e Estilo no HTML
@@ -540,10 +541,6 @@ Algumas propriedades permitem setar valores de outras propriedades simultaneamen
     border-top-style: none;
   }
 ```
-_Aprenda mais sobre:_<br>
-▸ [Introduction to CSS Shorthand](https://www.sitepoint.com/introduction-css-shorthand/ "SitePoint - Introduction to CSS Shorthand")<br>
-▸ [Propriedades shorthand](https://developer.mozilla.org/pt-BR/docs/Web/CSS/Shorthand_properties "MDN web docs - Propriedades shorthand")
-
 <a name="unit-reset"></a>
 Zerando unidades de medidas, Não é necessário especificar o tipo de unidade que pretende zerar, economize bytes!
 
@@ -834,7 +831,22 @@ Agrupe as `@media queries` junto aos respectivos blocos declarativos a que manip
     .element-selected { ... }
   }
 ```
-<h5 align="center"> Todo o css do projeto pronto? ok! Minifique seu código, Sempre!</h5>
+<p align="center"> Todo o css do projeto pronto? ok! Minifique seu código, Sempre!</p>
 
 - Use algum automatizador de tarefas como [Gulp](https://gulpjs.com/ "Automate and enhance your workflow")
 - Bate e pronto, coisa rápida. use [CSS Minifier](https://cssminifier.com/ "Minify your CSS")
+**<p align="center"> Todo o css do projeto pronto? ok! Minifique seu código, Sempre!</p>**
+
+- Use algum automatizador de tarefas como [Gulp](https://gulpjs.com/ "Automate and enhance your workflow")
+- Bate e pronto, coisa rápida. use [CSS Minifier](https://cssminifier.com/ "Minify your CSS")
+
+<a name="end"></a>
+<h2 align="center">Conclusão</h2>
+
+ Embora gambiarras sejam a forma mais genial de expressar a criatividade, use-a em último recurso, pois o objetivo do código em produção é manter eficiencia e gerenciabilidade.
+
+**Continue o aprendizado:**
+
+- Arquitetura CSS:
+  - [Semantic Class Names](https://maintainablecss.com/chapters/semantics/ "MaintainableCSS - Semantics ")<br>
+  - [Naming CSS Stuff Is Really Hard](https://seesparkbox.com/foundry/naming_css_stuff_is_really_hard "Naming CSS by Ethan Muller")<br>
