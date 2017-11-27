@@ -850,3 +850,6 @@ Agrupe as `@media queries` junto aos respectivos blocos declarativos a que manip
 - Arquitetura CSS:
   - [Semantic Class Names](https://maintainablecss.com/chapters/semantics/ "MaintainableCSS - Semantics ")<br>
   - [Naming CSS Stuff Is Really Hard](https://seesparkbox.com/foundry/naming_css_stuff_is_really_hard "Naming CSS by Ethan Muller")<br>
+- Shorthand CSS:
+  - [Introduction to CSS Shorthand](https://www.sitepoint.com/introduction-css-shorthand/ "SitePoint - Introduction to CSS Shorthand")<br>
+   - [Propriedades Shorthand](https://developer.mozilla.org/pt-BR/docs/Web/CSS/Shorthand_properties "MDN web docs - Propriedades shorthand")
