@@ -835,10 +835,6 @@ Agrupe as `@media queries` junto aos respectivos blocos declarativos a que manip
     .element-selected { ... }
   }
 ```
-<p align="center"> Todo o css do projeto pronto? ok! Minifique seu código, Sempre!</p>
-
-- Use algum automatizador de tarefas como [Gulp](https://gulpjs.com/ "Automate and enhance your workflow")
-- Bate e pronto, coisa rápida. use [CSS Minifier](https://cssminifier.com/ "Minify your CSS")
 **<p align="center"> Todo o css do projeto pronto? ok! Minifique seu código, Sempre!</p>**
 
 - Use algum automatizador de tarefas como [Gulp](https://gulpjs.com/ "Automate and enhance your workflow")
