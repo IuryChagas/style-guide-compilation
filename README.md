@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://github.com/IuryChagas/style-guide-compilation/blob/master/logo-sgc.jpg?raw=true" width="180">
+  <img src="https://github.com/IuryChagas/style-guide-compilation/blob/master/logo-sgc.jpg?raw=true" width="180" alt="hands on notebook">
 </p>
 
 <h1 align="center">
